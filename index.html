@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Krzysztof Kuc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="CSS/MyStyle.css">-->
+        <!-- Style LESS -->
+	<link rel="stylesheet" href="CSS/main.less" type="text/less">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=BioRhyme+Expanded&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css"/>
+        <link href="CSS/animate.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script src="JS/less.min.js" type="text/javascript"></script>
+        <script src="JS/jquery-3.1.1.min.js"></script>
+        <script src="JS/jquery.fullPage.js"></script>
+        <script src="JS/jquery.slicknav.min.js"></script>
+        <script src="JS/typed.min.js" type="text/javascript"></script>
+        <script src="JS/script.js" type="text/javascript"></script>
+        <script src="JS/jquery.viewportchecker.js"></script>
+        <script src="JS/jquery.circliful.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>
+        <header> 
+            <nav>
+                <div class="container">
+                    <div class="navbar">
+                        <div class="nav-logo">
+                            <h1>LOGO</h1>
+                        </div>
+                        <div class="main-menu-content">
+                            <ul id="menu">
+                                <li class="active" data-menuanchor="firstPage">
+                                    <a href="#firstPage">HOME</a>
+                                </li>
+                                <li class="first" data-menuanchor="secondPage">
+                                    <a href="#secondPage">O MNIE</a>
+                                </li>
+                                <li class="first1" data-menuanchor="3thPage">
+                                    <a href="#3thPage">UMIEJĘTNOŚCI</a>
+                                </li>
+                                <li class="first" data-menuanchor="4thPage">
+                                    <a href="#4thPage">KONTAKT</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- menu mobilne -->
+                        <div id="attach-mobile-menu">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="fullpage">
+            <div class="section section-1" data-anchor="firstPage">
+                <div class="section-1-inner">
+                    <div class="container">
+                        <div id="typed-strings">
+                            <p>Front-End Developer <br /> Krzysztof Kuc</p>
+                        </div>
+                        <span id="typed"></span>
+                    </div>
+                </div>
+                <a href="#secondPage" class="arrow"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
+            </div>
+            <div class="section section-2 " data-anchor="secondPage">
+                <div class="container">
+                    <div class="title-section">
+                        <div class="radius-section">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="title-name">
+                            <h1> O <span>MNIE</span> </h1>
+                        </div>
+                    </div>
+                    <div class="content" data-animate="fadeInLeft">
+                        <div class="content-text single-col">
+                            <div class="content-text-inside">
+                                <p>Cześć,</p>
+                                <p>Jestem studentem Informatyki drugiego stopnia na Politechnice Częstochowskiej. Od 2 lat realizuje się w specjalności tworzenia stron oraz aplikacji internetowych. 
+                                    Swoją wiedze utrwalam poprzez kursy online. Jestem osobą ambitną, dążącą do wyznaczonego przez siebie celu. </p>
+                            </div>
+                            <h1>Poznaj mnie lepiej:</h1>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/krzysztof.kuc.73"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/krzysztof-kuc-a92537138/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://plus.google.com/105015222461617059036"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-photo single-col">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section-2-tringle"></div>
+                <div class="section-2-tringle-bottom"></div>
+            </div>
+            <div class="section section-3" data-anchor="3thPage">
+                <div class="container">
+                    <div class="title-section">
+                        <div class="radius-section">
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <div class="title-name">
+                            <h1>MOJE <span>UMIEJĘTNOŚCI</span></h1>
+                        </div>
+                        </div>
+                        <div class="content-skills" data-animate="bounceIn">
+                            <div class="one-skill single-col" >
+                                <div class="inside-skill">
+                                 <div class="myStat"  data-dimension="250" data-animationstep="1.8" data-percent="85" data-info="New Clients" data-width="30" data-fontsize="38"  data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+                                 <h1><i class="devicon-css3-plain"></i> CSS3</h1>
+                                </div>
+                            </div>
+                            <div class="one-skill single-col">
+                                <div class="inside-skill">
+                                    <div class="myStat"  data-dimension="250" data-animationstep="1.8" data-percent="95" data-info="New Clients" data-width="30" data-fontsize="38"  data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+                                    <h1><i class="devicon-bootstrap-plain"></i> Bootstrap</h1>
+                                </div>
+                            </div>
+                            <div class="one-skill single-col">
+                                <div class="inside-skill">
+                                    <div class="myStat"  data-dimension="250" data-animationstep="1.8" data-percent="75" data-info='cos tam cos' data-width="30" data-fontsize="38"  data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd">                                    </div>
+                                    <h1><i class="devicon-html5-plain"></i> HTML5</h1>
+                                </div>
+                            </div>
+                            <div class="one-skill single-col">
+                                <div class="inside-skill">
+                                   <div class="myStat"  data-dimension="250" data-animationstep="1.8" data-percent="55" data-info="New Clients" data-width="30" data-fontsize="38"  data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+                                   <h1><i class="devicon-jquery-plain"></i> jQuery</h1>
+                                </div>
+                            </div>
+                            <div class="one-skill single-col">
+                                <div class="inside-skill">
+                                    <div class="myStat"  data-dimension="250" data-animationstep="1.8" data-percent="95" data-info="New Clients" data-width="30" data-fontsize="38"  data-fgcolor="#61a9dc" data-bgcolor="#fff" data-fill="#ddd"></div>
+                                    <h1><i class="devicon-less-plain-wordmark"></i> LESS</h1>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+                <div class="section-3-tringle"></div>
+                <div class="section-3-tringle-bottom"></div>
+            </div>
+            <div class="section" data-animate="fadeInLeft" style="background-color: red;" data-anchor="4thPage">Some section</div>
+        </div>
+        <script>
+           $(document).ready(function(){
+               
+               $('.content-skills[data-animate]').addClass('hide').each(function(){
+                        $(this).viewportChecker({
+                                classToAdd: 'show animated ' + $(this).data('animate'),
+                                classToRemove: 'hide',
+                                offset: 200,
+                                callbackFunction: function(){
+                                    if($('.content-skills').hasClass("bounceIn")){
+                                     $('.myStat').circliful();
+                                        }
+                                }
+                                
+                        });
+           }); 
+               
+          $('*[data-animate]').addClass('hide').each(function(){
+                        $(this).viewportChecker({
+                                classToAdd: 'show animated ' + $(this).data('animate'),
+                                classToRemove: 'hide',
+                                offset: 200
+                                
+                                
+                                
+                        });
+           }); 
+          
+          
+                
+           });
+        </script>
+    </body>
+</html>
