@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="CSS/main.less" type="text/less">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=latin-ext" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=BioRhyme+Expanded&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css"/>
         <link href="CSS/animate.css" rel="stylesheet" type="text/css"/>
@@ -39,14 +38,17 @@
                                 <li class="active" data-menuanchor="firstPage">
                                     <a href="#firstPage">HOME</a>
                                 </li>
-                                <li class="first" data-menuanchor="secondPage">
+                                <li class="" data-menuanchor="secondPage">
                                     <a href="#secondPage">O MNIE</a>
                                 </li>
-                                <li class="first1" data-menuanchor="3thPage">
+                                <li class="" data-menuanchor="3thPage">
                                     <a href="#3thPage">UMIEJĘTNOŚCI</a>
                                 </li>
-                                <li class="first" data-menuanchor="4thPage">
-                                    <a href="#4thPage">KONTAKT</a>
+                                 <li class="" data-menuanchor="4thPage">
+                                    <a href="#4thPage">OFERTA</a>
+                                </li>
+                                <li class="" data-menuanchor="5thPage">
+                                    <a href="#5thPage">KONTAKT</a>
                                 </li>
                             </ul>
                         </div>
@@ -158,10 +160,88 @@
                 <div class="section-3-tringle"></div>
                 <div class="section-3-tringle-bottom"></div>
             </div>
-            <div class="section" data-animate="fadeInLeft" style="background-color: red;" data-anchor="4thPage">Some section</div>
+            <div class="section section-4" data-animate="fadeInLeft" data-anchor="4thPage">
+                <div class="container">
+                     <div class="title-section">
+                        <div class="radius-section">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="title-name">
+                            <h1> MOJA <span>OFERTA</span> </h1>
+                        </div>
+                    </div>
+                    <div class="all-offer">
+                        <div class="one-offer-left single-col">
+                            <div class="picture">
+                                <img src="photofacefun_com_1487770315.jpg" alt=""/>
+                            </div>
+                            <div class="text-offer">
+                                <h1>Jaki tytul jezyka</h1>
+                            </div>
+                        </div>
+                        <div class="one-offer-right single-col">
+                            <div class="picture">
+                                <img src="picture2.png" alt=""/>
+                            </div>
+                            <div class="text-offer">
+                                <h1>Jaki tytul jezyka</h1>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="section-4-tringle"></div>
+                <div class="section-4-tringle-bottom"></div>
+            </div>
+            <div class="section section-5" data-animate="fadeInLeft" style="background-color: gray;" data-anchor="5thPage">Some section</div>
         </div>
         <script>
            $(document).ready(function(){
+               
+                $('.section-1').viewportChecker({
+                                repeat: true,
+                                callbackFunction: function(){
+                                   $('nav').css('background-color', 'rgba(0,0,0,0)');
+                                }
+                        });
+                         $('.section-2').viewportChecker({
+                             repeat: true,
+                                callbackFunction: function(){
+                                    if($(window).width()>768){
+                                   $('nav').css('background-color', '#7A003D');
+                                   }
+                                   else{
+                                        $('nav').css('background-color', 'rgba(0,0,0,0)');
+                                   }
+                                   }
+                                
+                        });
+                         $('.section-3').viewportChecker({
+                             repeat: true,
+                                callbackFunction: function(){
+                                     if($(window).width()>768){
+                                   $('nav').css('background-color', '#086B8C');
+                                   }
+                                   else{
+                                        $('nav').css('background-color', 'rgba(0,0,0,0)');
+                                   }
+                                   }
+                                
+                                
+                        });
+                     $('.section-4').viewportChecker({
+                         repeat: true,
+                                callbackFunction: function(){
+                                     if($(window).width()>768){
+                                   $('nav').css('background-color', '#084559');
+                                   }
+                                   else{
+                                        $('nav').css('background-color', 'rgba(0,0,0,0)');
+                                   }
+                                   }
+                                  
+                        });
+                 
                
                $('.content-skills[data-animate]').addClass('hide').each(function(){
                         $(this).viewportChecker({
@@ -173,9 +253,8 @@
                                      $('.myStat').circliful();
                                         }
                                 }
-                                
                         });
-           }); 
+                 }); 
                
           $('*[data-animate]').addClass('hide').each(function(){
                         $(this).viewportChecker({
